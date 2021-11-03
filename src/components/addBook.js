@@ -2,6 +2,8 @@ const AddBook = () => (
   <div className="Form">
     <h3>ADD NEW BOOK</h3>
     <form className="FormInput">
+      <input type="text" placeholder="Author name" value="" className="author-name" />
+      <br />
       <input type="text" placeholder="Book title" value="" className="book-title" />
       <br />
       <select className="categories" name="categories" id="categories">
