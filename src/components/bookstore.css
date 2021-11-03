@@ -46,7 +46,7 @@ html {
   width: 80%;
 }
 
-.book-title
+.book-title,
 .author-name {
   width: 30%;
 }
