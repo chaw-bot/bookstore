@@ -3,14 +3,14 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './navbar';
 import AddBook from './addBook';
 import Categories from './categories';
-import Books from './books';
+import BookList from './BookList';
 
 const Bookstore = () => (
   <Router>
     <Navbar />
     <Switch>
       <Route exact path="/">
-        <Books />
+        <BookList />
         <AddBook />
       </Route>
       <Route path="/categories">

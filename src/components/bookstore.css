@@ -46,8 +46,9 @@ html {
   width: 80%;
 }
 
-.book-title {
-  width: 50%;
+.book-title
+.author-name {
+  width: 30%;
 }
 
 .categories,
