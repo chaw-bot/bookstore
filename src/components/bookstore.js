@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import Navbar from './Navbar';
-import AddBook from './AddBook';
-import Categories from './Categories';
+import Navbar from './navbar';
+import AddBook from './addBook';
+import Categories from './categories';
 import BookList from './BookList';
 import store from '../redux/configureStore';
 

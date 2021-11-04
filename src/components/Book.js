@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BookData from './BookData';
-import Options from './Options';
+import BookData from './bookData';
+import Options from './options';
 import Percentage from './Percentage';
 import Progress from './Progress';
 

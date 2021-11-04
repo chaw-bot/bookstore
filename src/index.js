@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './components/bookstore.css';
-import Bookstore from './components/Bookstore';
+import Bookstore from './components/bookstore';
 
 ReactDOM.render(
   <React.StrictMode>
