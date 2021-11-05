@@ -46,12 +46,9 @@ body {
   text-decoration: underline;
 }
 
-.user {
-  size: lg;
-}
-
 .Navbar {
   background-color: #fff;
+  justify-content: space-between;
 }
 
 * {
@@ -69,10 +66,6 @@ body {
 .Navbar,
 .Nav1 {
   align-items: center;
-}
-
-.Navbar {
-  justify-content: space-between;
 }
 
 .Links li {
@@ -133,7 +126,7 @@ hr {
   font-family: 'Montserrat-Bold', sans-serif;
   font-weight: bold;
   font-size: 1.25rem;
-  color: #888888;
+  color: #888;
 }
 
 .Book div {
@@ -207,7 +200,7 @@ hr {
 
 .completed {
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
