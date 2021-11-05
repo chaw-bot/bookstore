@@ -32,9 +32,6 @@ const AddBook = () => {
     dispatch(addBook(newBook));
     setTitle('');
     setCategory('');
-
-    // await dispatch(pullBooks());
-    // document.location.reload(true);
   };
 
   return (
