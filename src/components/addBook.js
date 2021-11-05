@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
+import { addBookAPI } from '../API/Api';
 import { addBook } from '../redux/books/books';
-import pullBooks from './BookSlice';
 
 const AddBook = () => {
   const [bookTitle, setTitle] = useState('');
@@ -19,19 +19,22 @@ const AddBook = () => {
   const dispatch = useDispatch();
 
   const submitBookToStore = async (e) => {
+    e.preventDefault();
+
     const newBook = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title: bookTitle,
       category: bookCategory,
     };
 
+    await addBookAPI(newBook);
+
     dispatch(addBook(newBook));
     setTitle('');
     setCategory('');
-    await dispatch(pullBooks());
-    document.location.reload(true);
 
-    e.preventDefault();
+    // await dispatch(pullBooks());
+    // document.location.reload(true);
   };
 
   return (

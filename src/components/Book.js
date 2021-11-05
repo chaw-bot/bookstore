@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import React from 'react';
 import PropTypes from 'prop-types';
 import BookData from './bookData';
@@ -7,13 +8,13 @@ import Progress from './Progress';
 
 const Book = (
   {
-    id, title, category,
+    item_id, title, category,
   },
 ) => (
   <div className="Book">
     <div>
       <BookData title={title} category={category} />
-      <Options id={id} />
+      <Options id={item_id} />
     </div>
     <div>
       <Percentage />
@@ -25,7 +26,7 @@ const Book = (
 );
 
 Book.propTypes = ({
-  id: PropTypes.string.isRequired,
+  item_id: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 });
