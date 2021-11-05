@@ -14,6 +14,7 @@ const Bookstore = () => (
       <Switch>
         <Route exact path="/">
           <BookList />
+          <hr />
           <AddBook />
         </Route>
         <Route path="/categories">
