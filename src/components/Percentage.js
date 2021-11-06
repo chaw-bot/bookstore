@@ -1,7 +1,12 @@
+import { AiOutlineLoading3Quarters } from 'react-icons/ai';
+
 const Percentage = () => (
-  <div>
-    <p className="percentage">0%</p>
-    <p>Completed</p>
+  <div className="percentageContainer">
+    <AiOutlineLoading3Quarters className="oval" />
+    <div>
+      <p className="percentage">0%</p>
+      <p className="completed">Completed</p>
+    </div>
   </div>
 );
 

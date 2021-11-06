@@ -54,9 +54,9 @@ const AddBook = () => {
           onChange={handleCategoryChange}
         >
           <option defaultValue="">Category</option>
-          <option value="action">Action</option>
-          <option value="science-fiction">Science Fiction</option>
-          <option value="economy">Economy</option>
+          <option value="Action">Action</option>
+          <option value="Science-fiction">Science Fiction</option>
+          <option value="Economy">Economy</option>
         </select>
         <br />
         <button className="submit" type="submit">ADD BOOK</button>
